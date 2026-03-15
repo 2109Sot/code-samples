@@ -96,5 +96,3 @@ The project involved:
 - structured vote comparison
 - anomaly detection
 - interactive investigative visualization
-
-## Repository structure
