@@ -1,81 +1,100 @@
-# Investigative data methods
+# Investigative Data Methods
+### Reproducible workflows used in cross-border investigative reporting
 
-This repository contains selected code samples and visualization work developed by **Sotiris Sideris** for investigative reporting projects.
+This repository contains selected data pipelines, analysis notebooks and visualizations developed by Sotiris Sideris for investigative journalism projects.
 
-The materials are intended to demonstrate different parts of an investigative data workflow:
+The examples demonstrate how computational methods — including web scraping, OCR, document processing and data visualization — can be used to uncover patterns of wrongdoing in complex datasets.
 
-- **data collection and browser automation**
-- **document processing and structured dataset construction**
-- **interactive data visualization for published reporting**
-
-The repository includes three representative samples:
-
-## 1. Equasis vessel management scraper
-
-**Notebook:** `notebooks/equasis_vessel_management_scraper.ipynb`
-
-This notebook documents a Selenium-based workflow for retrieving vessel and company-management information from **Equasis** using a list of IMO numbers.
-
-It demonstrates:
-
-- browser automation with Selenium
-- extraction of vessel particulars
-- retrieval of management/company information
-- creation of an exportable dataset for downstream analysis
-
-**Reporting context:**  
-This workflow was developed by **Sotiris Sideris** for investigative reporting projects led by **Reporters United**, in collaboration with **Investigate Europe** for the *Fuelling War* investigation and with the **International Consortium of Investigative Journalists (ICIJ)** for the *Caspian Cabals* investigation.
-
-**Note:** Parts of the workflow rely on **Equasis**, an access-restricted maritime information platform, as well as datasets obtained through newsroom collaborations.
+The code and methodology are shared here to support transparency, reproducibility and knowledge sharing within the investigative journalism community.
 
 ---
 
-## 2. Eswatini GBV case pipeline
+## Investigations
 
-**Notebook:** `notebooks/eswatini_gbv_case_pipeline.ipynb`
+### 1. Court record analysis — Gender-based violence cases in Eswatini
 
-This notebook documents a reproducible workflow for collecting and structuring High Court judgments from the **Eswatini Legal Information Institute (EswatiniLII)**.
+![GBV case pipeline](images/gbv_pipeline.png)
 
-It demonstrates:
+**Story:**  
+https://veza.news/article/2024/10/24/without-justice-how-eswatinis-system-is-failing-victims-of-gender-based-violence/
 
-- scraping case listing pages and detailed metadata
-- generating PDF download links
-- extracting text from judgment PDFs
-- OCR fallback for image-based documents
-- merging text with metadata into an analysis-ready dataset
+This project involved collecting and analyzing court records to examine patterns in gender-based violence prosecutions.
 
-**Reporting context:**  
-This workflow was developed for the *Without Justice* investigation led by the **Center for Collaborative Investigative Journalism (CCIJ)**.
+**Code**
 
----
+`notebooks/eswatini_gbv_case_pipeline.ipynb`
 
-## 3. Nigeria election data visualization
+**Pipeline overview**
 
-**Project:** `observable/nigeria_election_data_story/`
+1. Scrape court records
+2. Extract case metadata
+3. Clean and structure case data
+4. Use NLP classification to identify gender-based violence cases
+5. Human verification of model outputs
 
-This Observable project contains interactive charts developed for the *Democracy Deferred* investigation led by the **Center for Collaborative Investigative Journalism (CCIJ)**.
+**Key techniques**
 
-It demonstrates:
-
-- editorial chart design
-- interactive filtering
-- annotation logic
-- visual explanation of election data irregularities
-
-The project examines election data from Nigeria’s 2023 presidential election to explore inconsistencies between publicly promised transparency mechanisms and the data ultimately released by the electoral commission.
-
-Using computational analysis and interactive visualizations, the notebook explores patterns in the results, highlights anomalies in the dataset, and provides tools for examining how votes were recorded across different regions.
-
-The code and methodology are shared here for transparency and reproducibility. If you reuse or adapt this work in reporting or research, please provide appropriate attribution.
+- web scraping
+- structured text extraction
+- machine-assisted classification
+- human-in-the-loop verification
 
 ---
 
-## Why these samples
+### 2. Shipping database extraction — Vessel management networks
 
-These notebooks and visualizations are intended as **representative samples**, not a complete archive of project code.
+![Equasis vessel scraper](images/equasis_scraper.png)
 
-Together, they show three core parts of my investigative data practice:
+**Story:**  
+https://www.investigate-europe.eu/posts/european-ships-bolster-russian-fossil-fuel-trade-despite-looming-eu-sanctions
 
-- building datasets from difficult or access-restricted sources
-- structuring and processing large collections of documents
-- translating analysis into audience-facing visual reporting
+This notebook demonstrates a scraper used to collect vessel ownership and management records from maritime databases.
+
+**Code**
+
+`notebooks/equasis_vessel_management_scraper.ipynb`
+
+**Pipeline overview**
+
+1. Automated login and navigation
+2. Scraping vessel management records
+3. Structured data extraction
+4. Network-ready output
+
+**Key techniques**
+
+- Selenium automation
+- structured scraping
+- maritime data normalization
+
+---
+
+### 3. Election transparency analysis — Nigeria 2023
+
+![Nigeria election visualization](images/nigeria_viz.png)
+
+**Story:**  
+https://veza.news/article/2025/03/31/broken-promises-of-transparency-a-deep-dive-into-nigerias-2023-election-data/
+
+This investigation examines discrepancies between official election results and underlying documents published through Nigeria's election transparency portal.
+
+The project involved:
+
+- scraping election result documents
+- OCR extraction of vote tallies
+- structured data comparison
+- interactive visualization of discrepancies
+
+**Code**
+
+- `observable/nigeria_election_data_story`
+- Observable interactive visualizations
+
+**Key techniques**
+
+- OCR document extraction
+- structured vote comparison
+- anomaly detection
+- interactive investigative visualization
+
+## Repository structure

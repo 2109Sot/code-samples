@@ -1,0 +1,14 @@
+{
+  "name": "bb1429f00e502067",
+  "main": "bb1429f00e502067@535.js",
+  "version": "535.0.0",
+  "homepage": "https://observablehq.com/d/bb1429f00e502067",
+  "author": {
+    "name": "disinformation",
+    "url": "https://observablehq.com/@disinformation"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
