@@ -1,11 +1,10 @@
-# Investigative Data Methods
-### Reproducible workflows used in cross-border investigative reporting
+# Code sample
 
-This repository contains selected data pipelines, analysis notebooks and visualizations developed by Sotiris Sideris for investigative journalism projects.
+This repository contains selected code and data visualizations developed by Sotiris Sideris for cross-border investigations.
 
-The examples demonstrate how computational methods — including web scraping, OCR, document processing and data visualization — can be used to uncover patterns of wrongdoing in complex datasets.
+The code and methodology are provided here to support transparency, reproducibility and knowledge sharing within the data and investigative journalism community.
 
-The code and methodology are shared here to support transparency, reproducibility and knowledge sharing within the investigative journalism community.
+Questions about the code in this repo? Email sotirisideris@gmail.com
 
 ---
 
@@ -15,10 +14,7 @@ The code and methodology are shared here to support transparency, reproducibilit
 
 ![GBV case pipeline](images/gbv_pipeline.png)
 
-**Story:**  
-https://veza.news/article/2024/10/24/without-justice-how-eswatinis-system-is-failing-victims-of-gender-based-violence/
-
-This project involved collecting and analyzing court records to examine patterns in gender-based violence prosecutions.
+This [project](https://veza.news/article/2024/10/24/without-justice-how-eswatinis-system-is-failing-victims-of-gender-based-violence/) involved collecting and analyzing court records to examine patterns in gender-based violence prosecutions.
 
 **Code**
 
@@ -37,7 +33,6 @@ This project involved collecting and analyzing court records to examine patterns
 - web scraping
 - structured text extraction
 - machine-assisted classification
-- human-in-the-loop verification
 
 ---
 
@@ -45,10 +40,7 @@ This project involved collecting and analyzing court records to examine patterns
 
 ![Equasis vessel scraper](images/equasis_scraper.png)
 
-**Story:**  
-https://www.investigate-europe.eu/posts/european-ships-bolster-russian-fossil-fuel-trade-despite-looming-eu-sanctions
-
-This notebook demonstrates a scraper used to collect vessel ownership and management records from maritime databases.
+This notebook demonstrates a scraper used to collect [vessel ownership and management records](https://www.investigate-europe.eu/posts/european-ships-bolster-russian-fossil-fuel-trade-despite-looming-eu-sanctions) from Equasis.
 
 **Code**
 
@@ -56,10 +48,9 @@ This notebook demonstrates a scraper used to collect vessel ownership and manage
 
 **Pipeline overview**
 
-1. Automated login and navigation
-2. Scraping vessel management records
-3. Structured data extraction
-4. Network-ready output
+1. Scraping vessel management databases
+2. Structured data extraction
+3. Network-ready output
 
 **Key techniques**
 
@@ -73,10 +64,7 @@ This notebook demonstrates a scraper used to collect vessel ownership and manage
 
 ![Nigeria election visualization](images/nigeria_viz.png)
 
-**Story:**  
-https://veza.news/article/2025/03/31/broken-promises-of-transparency-a-deep-dive-into-nigerias-2023-election-data/
-
-This investigation examines discrepancies between official election results and underlying documents published through Nigeria's election transparency portal.
+This [investigation](https://veza.news/article/2025/03/31/broken-promises-of-transparency-a-deep-dive-into-nigerias-2023-election-data/) examines discrepancies between official election results and underlying documents published through Nigeria's election transparency portal.
 
 The project involved:
 
@@ -87,12 +75,12 @@ The project involved:
 
 **Code**
 
-- `observable/nigeria_election_data_story`
-- Observable interactive visualizations
+- `observable`
+- [Observable interactive visualizations](https://observablehq.com/d/bb1429f00e502067)
 
 **Key techniques**
 
 - OCR document extraction
 - structured vote comparison
 - anomaly detection
-- interactive investigative visualization
+- interactive dataviz
