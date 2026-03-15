@@ -1,4 +1,4 @@
-# Code sample
+# Code samples
 
 This repository contains selected code and data visualizations developed by Sotiris Sideris for cross-border investigations.
 
