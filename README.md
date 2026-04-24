@@ -91,7 +91,7 @@ The project involved:
 
 ![Greek auctions scraper](images/network_companies_pillar_eurobank.png)
 
-This project scrapes and structures auction listings from [eauction.gr](https://www.eauction.gr), Greece's official electronic auction platform, to support monitoring of distressed-property auctions.
+[This project](https://www.reportersunited.gr/en/14444/minotaur-captured-eurobank/) scrapes and structures auction listings from [eauction.gr](https://www.eauction.gr), Greece's official electronic auction platform, to support monitoring of distressed-property auctions.
 
 The project involved:
 
