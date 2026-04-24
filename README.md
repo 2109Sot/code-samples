@@ -84,3 +84,34 @@ The project involved:
 - structured vote comparison
 - anomaly detection
 - interactive dataviz
+
+---
+
+### 4. Property auction monitoring — Greek electronic auctions
+
+This project scrapes and structures auction listings from [eauction.gr](https://www.eauction.gr), Greece's official electronic auction platform, to support monitoring of distressed-property auctions.
+
+The project involved:
+
+- scraping multi-page auction listing indexes
+- visiting each auction detail page to extract structured fields (dates, starting bid, total debt, region, debtors, attached PDFs)
+- combining and deduplicating data across scraping batches
+- exporting clean datasets for further analysis and OpenRefine reconciliation
+
+**Code**
+
+`notebooks/greek_auctions_scraper.ipynb`
+
+**Pipeline overview**
+
+1. Scrape listing pages → collect auction URLs and regions
+2. Combine listing CSVs; extract clean URLs with regex
+3. Visit detail pages → extract auction metadata, debtor info, PDF attachments
+4. Merge all batches into a master dataset
+
+**Key techniques**
+
+- Selenium browser automation
+- BeautifulSoup structured HTML parsing
+- regex extraction
+- pandas data wrangling and deduplication

@@ -3,6 +3,7 @@ requests
 beautifulsoup4
 selenium
 webdriver-manager
+undetected-chromedriver
 pypdf
 pytesseract
 pdf2image
