@@ -89,6 +89,8 @@ The project involved:
 
 ### 4. Property auction monitoring — Greek electronic auctions
 
+![Greek auctions scraper](images/network_companies_pillar_eurobank.png)
+
 This project scrapes and structures auction listings from [eauction.gr](https://www.eauction.gr), Greece's official electronic auction platform, to support monitoring of distressed-property auctions.
 
 The project involved:
